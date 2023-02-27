@@ -4,8 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cafe Menu</title>
+
    <style>
-   body {
+body {
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
 }
 
@@ -19,7 +20,23 @@ h1, h2, p {
   margin-left: auto;
   margin-right: auto;
 }
+
+
+.item p {
+  display: inline-block;
+}
+
+.flavor {
+  text-align: left;
+  width: 75%;
+}
+
+.price {
+  text-align: right;
+  width: 25%
+}
    </style>
+
   </head>
   <body>
     <div class="menu">
@@ -28,11 +45,28 @@ h1, h2, p {
         <p>Est. 2020</p>
         <section>
           <h2>Coffee</h2>
-           <article>
-            <p>French Vanilla</p>
-            <p>3.00</p>
+          <article class="item">
+            <p class="flavor">French Vanilla</p><p class="price">3.00</p>
           </article>
-                  </section>
+          <article class="item">
+            <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Hazelnut</p><p class="price">4.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Mocha</p><p class="price">4.50</p>
+          </article>
+        </section>
+        <section>
+          <h2>Desserts</h2>
+          <article class="item">
+            <p class="dessert">Donut</p><p class="price">1.50</p>
+          </article>
+        </section>
       </main>
     </div>
   </body>
