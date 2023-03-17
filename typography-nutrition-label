@@ -6,7 +6,7 @@
   <title>Nutrition Label</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
   <style>
-    * {
+  * {
   box-sizing: border-box;
 }
 
@@ -94,10 +94,21 @@ p {
   margin-left: 1em;
 }
 
+.double-indent {
+  margin-left: 2em;
+}
+
 .daily-value p:not(.no-divider) {
   border-bottom: 1px solid #888989;
 }
-  </style>
+
+.note {
+  font-size: 0.6rem;
+  margin: 5px 0;
+  padding: 0 8px;
+  text-indent: -8px;
+}
+</style>
 </head>
 
 <body>
@@ -123,7 +134,27 @@ p {
       <p><span><span class="bold">Total Fat</span> 8g</span> <span class="bold">10%</span></p>
       <p class="indent no-divider">Saturated Fat 1g <span class="bold">5%</span></p>
       <div class="divider"></div>
-    </div>    
+      <p class="indent no-divider"><span><i>Trans</i> Fat 0g</span></p>
+      <div class="divider"></div>
+      <p><span><span class="bold">Cholesterol</span> 0mg</span> <span class="bold">0%</span></p>
+      <p><span><span class="bold">Sodium</span> 160mg</span> <span class="bold">7%</span></p>
+      <p><span><span class="bold">Total Carbohydrate</span> 37g</span> <span class="bold">13%</span></p>
+      <p class="indent no-divider">Dietary Fiber 4g</p>
+      <div class="divider"></div>
+      <p class="indent no-divider">Total Sugars 12g</p>
+      <div class="divider double-indent"></div>
+      <p class="double-indent no-divider">Includes 10g Added Sugars <span class="bold">20%</span>
+      <div class="divider"></div>
+      <p class="no-divider"><span class="bold">Protein</span> 3g</p>
+      <div class="divider large"></div>
+      <p>Vitamin D 2mcg <span>10%</span></p>
+      <p>Calcium 260mg <span>20%</span></p>
+      <p>Iron 8mg <span>45%</span></p>
+      <p class="no-divider">Potassium 235mg <span>6%</span></p>
+    </div>
+    <div class="divider medium"></div>
+    <p class="note">* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily
+      diet. 2,000 calories a day is used for general nutrition advice.</p>
   </div>
 </body>
 </html>
